@@ -66,8 +66,7 @@ body {
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  box-shadow:
-    0 0 35px rgba(0, 245, 255, 0.12);
+  box-shadow: 0 0 35px rgba(0, 245, 255, 0.12);
 }
 
 /* LOGO */
@@ -76,11 +75,7 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
 
-  background: linear-gradient(
-    to right,
-    #00f5ff,
-    #ff00c8
-  );
+  background: linear-gradient(to right, #00f5ff, #ff00c8);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,8 +106,7 @@ body {
 }
 
 .navbar input:focus {
-  box-shadow:
-    0 0 20px rgba(0, 245, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
 }
 
 /* MENU */
@@ -147,12 +141,7 @@ body {
 
   line-height: 1.1;
 
-  background: linear-gradient(
-    to right,
-    #ffffff,
-    #00f5ff,
-    #ff00c8
-  );
+  background: linear-gradient(to right, #ffffff, #00f5ff, #ff00c8);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -204,8 +193,7 @@ body {
 
   transition: 0.5s ease;
 
-  box-shadow:
-    0 0 25px rgba(0, 245, 255, 0.12);
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.12);
 }
 
 .card:hover {
@@ -240,12 +228,7 @@ body {
   position: absolute;
   inset: 0;
 
-  background:
-    linear-gradient(
-      to top,
-      rgba(5, 8, 22, 1),
-      rgba(5, 8, 22, 0.35)
-    );
+  background: linear-gradient(to top, rgba(5, 8, 22, 1), rgba(5, 8, 22, 0.35));
 }
 
 /* CONTENT */
@@ -279,8 +262,7 @@ body {
 
   transition: 0.5s ease;
 
-  box-shadow:
-    0 0 25px rgba(0, 245, 255, 0.45);
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.45);
 }
 
 .card:hover .profile {
@@ -380,36 +362,25 @@ body {
 }
 
 .connect-btn {
-  background: linear-gradient(
-    to right,
-    #00c2ff,
-    #ff00c8
-  );
+  background: linear-gradient(to right, #00c2ff, #ff00c8);
 
   color: white;
 
-  box-shadow:
-    0 0 25px rgba(0, 245, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
 }
 
 .connect-btn:hover {
   transform: scale(1.03);
 
-  box-shadow:
-    0 0 45px rgba(0, 245, 255, 0.75);
+  box-shadow: 0 0 45px rgba(0, 245, 255, 0.75);
 }
 
 .connected-btn {
-  background: linear-gradient(
-    to right,
-    #00ff99,
-    #00c853
-  );
+  background: linear-gradient(to right, #00ff99, #00c853);
 
   color: white;
 
-  box-shadow:
-    0 0 25px rgba(0, 255, 153, 0.35);
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.35);
 }
 
 /* NOT FOUND */

@@ -1,19 +1,19 @@
 
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card card1">
 
       <img
-        src="https://media.licdn.com/dms/image/v2/D5603AQGotsNPHBAp4g/profile-displayphoto-crop_800_800/B56Z4w.I_tIQAM-/0/1778938057638?e=1781136000&v=beta&t=oxbdv3T6BpR0xMrbsNPpQ8oe7eGRKqFGAXaE1BKHTL0"
-        alt="profile_pic"
+        src={props.src}
+        alt={props.alt}
       />
 
       <div className="overlay">
        <div className="content">
         <div className="name-row">
 
-            <h2>Sagarika Das</h2>
+            <h2>{props.name}</h2>
             <span className="verify">✔</span>
 
           </div>

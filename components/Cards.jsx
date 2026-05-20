@@ -1,59 +1,43 @@
-function Card({ developer, handleConnect }) {
+
+
+const Card = () => {
   return (
-    <div className="card">
-      <div
-        className="cover"
-        style={{
-          backgroundImage: `url(${developer.cover})`,
-        }}
-      ></div>
+    <div className="card card1">
 
-      <div className="overlay"></div>
+      <img
+        src="https://media.licdn.com/dms/image/v2/D5603AQGotsNPHBAp4g/profile-displayphoto-crop_800_800/B56Z4w.I_tIQAM-/0/1778938057638?e=1781136000&v=beta&t=oxbdv3T6BpR0xMrbsNPpQ8oe7eGRKqFGAXaE1BKHTL0"
+        alt="profile_pic"
+      />
 
-      <div className="content">
-        <img
-          src={developer.image}
-          alt={developer.name}
-          className="profile"
-        />
+      <div className="overlay">
+       <div className="content">
+        <div className="name-row">
 
-        <h2>{developer.name}</h2>
+            <h2>Sagarika Das</h2>
+            <span className="verify">✔</span>
 
-        <p className="role">{developer.role}</p>
-
-        <div className="stats">
-          <div>
-            <h3>{developer.followers}</h3>
-            <span>Followers</span>
           </div>
 
-          <div>
-            <h3>{developer.connections}</h3>
-            <span>Connections</span>
-          </div>
-        </div>
+          <p>
+            Learning React and crafting modern UI ✨
+          </p>
 
-        <div className="skills">
-          {developer.skills.map((skill, index) => (
-            <span key={index}>{skill}</span>
-          ))}
-        </div>
+          <div className="bottom-row">
+            <div className="stats">
 
-        <button
-          onClick={() => handleConnect(developer.id)}
-          className={
-            developer.connected
-              ? "connected-btn"
-              : "connect-btn"
-          }
-        >
-          {developer.connected
-            ? "Connected ✓"
-            : "Connect"}
-        </button>
+              <span>👤 800</span>
+
+              <span>📷 9</span>
+
+            </div>
+            <button>Follow</button>
+            </div>
+
+        </div>
       </div>
+
     </div>
   );
-}
+};
 
 export default Card;

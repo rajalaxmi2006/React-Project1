@@ -1,27 +1,37 @@
 import "./App.css";
-import Card from "./components/Cards";
+import Card from "./components/Cards.jsx";
+import users from "./data.js";
 
 const App = () => {
-
-  function handelClick(){
-    alert ("You have got 1 connection!!");
+  function handleClick() {
+    alert("You've gained 1 follower !!!");
   }
+
   return (
-    <div className="container">
-
-      <div className="card1">
-        <Card name="Rajalaxmi Biswal" dob={31-12-2006} onclick={handelClick} src ="https://media.licdn.com/dms/image/v2/D5603AQGotsNPHBAp4g/profile-displayphoto-crop_800_800/B56Z4w.I_tIQAM-/0/1778938057638?e=1781136000&v=beta&t=oxbdv3T6BpR0xMrbsNPpQ8oe7eGRKqFGAXaE1BKHTL0" alt="profile_pic"/>
-      </div>
-
-      <div className="card2">
+    <>
+      <h1>React Components</h1>
+      <div className="container">
+        {users.map((user) => (
+          <Card
+            key={user.id}
+            name={user.name}
+            dob={user.dob}
+            src={user.src}
+            click={() => handleClick(user.name)}
+          />
+        ))}
+        {/* <Card
+          name={"Pramod"}
+          dob={"21.08.2001"}
+          click={handleClick}
+          src="https://media.licdn.com/dms/image/v2/D5603AQHAP4gynqQkgQ/profile-displayphoto-scale_200_200/B56Z4vY8fuGoAc-/0/1778911531392?e=1780531200&v=beta&t=_1wGK-c7RvF_OL6ubuGfi4HDMpP54FmEhu20qdc9o4w"
+          alt="profile_pic"
+        />
         <Card />
-      </div>
-
-      <div className="card3">
         <Card />
+        <Card /> */}
       </div>
-
-    </div>
+    </>
   );
 };
 
